@@ -1,0 +1,27 @@
+.TH volume 1
+.SH NAME
+volume - get/set the volume on MacOSX.
+.SH SYNOPSIS
+volume [mute|max|0-7] or mute
+.SH DESCRIPTION
+volume displays the current volume or sets the volume on
+MacOSX.  It relies on osascript(1).
+
+If volume is invoked with out any options, it displays
+the current volume.
+
+If volume is invoked as 'mute', it sets the volume to 0.
+.SH OPTIONS
+.TP
+.B mute
+sets the volume to 0
+.TP
+.B max
+sets the volume to the maximum (7)
+.SH SEE ALSO
+osascript(1)
+.SH PLATFORMS
+volume has been tested on MacOSX 12.x (Monterey).  It should
+work on other versions.
+.SH HISTORY
+volume was written by Sriranga Veeraraghavan <ranga@calalum.org>.
