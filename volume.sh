@@ -41,6 +41,8 @@ do
 done
 
 # if invoked as "mute", set the volume to 0 and exit
+# alternative method would be to use:
+# osascript -e 'set volume output muted true'
 
 PGM="`echo $0 | $SED -e 's#^.*\/##'`"
 if [ X"$PGM" = X"mute" ] ; then
